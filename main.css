@@ -1,122 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color: black;
+    width: 100vw;
 }
 
-body {
-    width: 100vw;
-    background: linear-gradient(to right, #363636, #000000);
+.titulo,
+.subtitulo,
+.texto {
+    font-family: "Anta", sans-serif;
+    color: white;
+    text-align: center;
 }
 
 header {
-    display: block;
-    background-color: #000000;
-    width: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-header #head-up {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Comfortaa' , sans-serif;
-}
-
-header #head-mid {
-    display: flex;
-    font-family: 'Comfortaa' , sans-serif;
+    background-color: black;
     color: white;
 }
 
-.carousel-item img {
-    opacity: 0.3;
+.carousel-item {
+    height: 50vh;
 }
 
-.carousel-caption h5 {
-    font-family: 'Comfortaa' , sans-serif;
-    font-size: 15;
+#painel li a {
+    font-family: "Anta", sans-serif;
+    color: white;
 }
 
-#grid {
-    padding-top: 35vh;
+#painel li .active {
+    background-color: darkslategrey;
 }
 
-@media screen and (max-width: 640px) {
-    header #head-up h1 {
-        font-size: 30px;
-        margin: 5px 10px;
-    }
-
-    header #head-up .logo {
-        display: none;
-    }
-
-    header #head-mid h3 {
-        display: none;
-    }
-
-    header #head-mid {
-        justify-content: center;
-    }
-
-    #carousel_desk {
-        display: none;
-    }
-
-    #carousel_mob .carousel-caption h5 {
-        font-size: 12px;
-    }
-
-    nav {
-        padding-top: 35vh;
-    }
+#icon_ok_nome,
+#icon_ok_telefone,
+#icon_ok_email {
+    color: green;
+    display: none;
 }
 
-@media screen and (min-width: 641px) {
-    header #head-up {
-        height: 60px;
-    }
-
-    header #head-up h1 {
-        font-size: 40px;
-        margin: 5px 10px;
-        margin-top: 5px;
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-
-    header #head-mid {
-        font-size: 25px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #head-mid h3 {
-        font-size: 20px;
-    }
-
-    header #head-mid h6 {
-        display: none;
-    }
-
-    
-    #carousel_desk {
-        position: relative;
-        display: none;
-        max-height: 150px;
-        overflow: hidden;
-    }
-    
-
-    #carousel_mob {
-        display: none;
-    }
-
-    nav {
-        padding-top: 35vh;
-    }
+#nome_erro,
+#email_erro {
+    color: red;
+    display: none;
 }
 
+.sucess {
+    font-family: "Anta", sans-serif;
+    color: green;
+}
+
+.error {
+    font-family: "Anta", sans-serif;
+    color: red;
+}
+
+#button_sucess {
+    display: none;
+}

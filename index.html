@@ -6,126 +6,298 @@
     <title>Garagem 73 - A casa do seu importado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <section id="head-up">
-            <div class="logo">
-                <img src="./imagens/logo.jpg" alt="Logo">
+<!--Header-->
+    <header id="theader" class="sticky-top w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="titulo d-flex justify-content-center py-2">
+                        <img class="img-fluid" src="./imagens/logo.jpg" alt="Logo">
+                        <h1 class="section-title pt-2 ms-2">Garagem 73</h1>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="subtitulo d-flex justify-content-center my-auto">
+                        <p class="py-md-3 text-sm-small">A casa do seu importado fora de linha</p>
+                    </div>
+                </div>
             </div>
-            <div class="logotxt">
-                <h1>Garagem 73</h1>
-            </div>
-            <div class="logo">
-                <img src="./imagens/logo.jpg" alt="Logo">
-            </div>
-        </section>
-        <section id="head-mid">
-            <h3>A casa do seu importado fora de linha</h3>
-            <h6>A casa do seu importado fora de linha</h6>
-        </section>
+        </div>
     </header>
-    <!--CAROUSEL inicio-->
-    <div id="carousel_desk" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div data-bs-interval="5500" class="carousel-item active">
-                <img class="d-block w-100" src="./imagens/carousel_desk/carousel1desk.jpg" alt="Bem-vindo!">
-                <div class="carousel-caption">
-                    <h5>Bem-vindo a garagem 73 - Aqui seu importado fora de linha recebe a atenção que mereçe</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_desk/carousel2desk.png" alt="Serviços">
-                <div class="carousel-caption">
-                    <h5>Realizamos reformas, vendas, manutenções e restaurações em veiculos importados fora de linha</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_desk/carousel3desk.jpg" alt="Mais-Serviços">
-                <div class="carousel-caption">
-                    <h5>Reformas de motores, transmissões, elétrica, eletrônica embarcada e funilaria</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_desk/carousel4desk.jpg" alt="Fale conosco">
-                <div class="carousel-caption">
-                    <h5>Entre em contato e peça seu orçamento sem compromisso</h5>
-                </div>
-            </div>
-            <button data-bs-target="#carousel_desk" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button data-bs-target="#carousel_desk" data-bs-slide="next" class="carousel-control-next" type="button">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </div>
-    <div id="carousel_mob" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div data-bs-interval="5500" class="carousel-item active">
-                <img class="d-block w-100" src="./imagens/carousel_mob/carousel1mob.jpg" alt="Bem-vindo!">
-                <div class="carousel-caption">
-                    <h5>Bem-vindo a garagem 73 - Aqui seu importado fora de linha recebe a atenção que mereçe</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_mob/carousel2mob.png" alt="Serviços">
-                <div class="carousel-caption">
-                    <h5>Realizamos reformas, vendas, manutenções e restaurações em veiculos importados fora de linha</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_mob/carousel3mob.jpg" alt="Mais-Serviços">
-                <div class="carousel-caption">
-                    <h5>Reformas de motores, transmissões, elétrica, eletrônica embarcada e funilaria</h5>
-                </div>
-            </div>
-            <div data-bs-interval="5500" class="carousel-item">
-                <img class="d-block w-100" src="./imagens/carousel_mob/carousel4mob.jpg" alt="Fale conosco">
-                <div class="carousel-caption">
-                    <h5>Entre em contato e peça seu orçamento sem compromisso</h5>
-                </div>
-            </div>
-    <!--CAROUSEL fim-->
-
-    <!--Abas Inicio (esclarecer depois) -->
+    <!--CAROUSEL-->
     <div class="container">
-        <nav class="nav nav-tabs">
-            <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Sobre a Oficina</button>
-            <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Serviços</button>
-            <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Contato</button>
-        </nav>
-        <div class="tab-pane active" id="aba1">
-            Conteudo de 1
-        </div>
-        <div class="tab-pane" id="aba2">
-            Conteudo de 2
-        </div>
-        <div class="tab-pane" id="aba3">
-            Conteudo de 3
+        <div id="carousel_desk" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5500" class="carousel-item active">
+                    <img class="d-block w-100" src="./imagens/carousel_desk/alt4.jpg" alt="Bem-vindo!">
+                    <div class="carousel-caption">
+                        <p class="subtitulo d-flex justify-content-center">Bem-vindo a garagem 73 - Aqui seu importado fora de linha recebe a atenção que mereçe</p>
+                    </div>
+                </div>
+                <div data-bs-interval="5500" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/carousel_desk/alt1.jpg" alt="Serviços">
+                    <div class="carousel-caption">
+                        <p class="subtitulo d-flex justify-content-center">Realizamos reformas, vendas, manutenções e restaurações em veiculos importados fora de linha</p>
+                    </div>
+                </div>
+                <div data-bs-interval="5500" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/carousel_desk/alt2.jpg" alt="Mais-Serviços">
+                    <div class="carousel-caption">
+                        <p class="subtitulo d-flex justify-content-center">Reformas de motores, transmissões, elétrica, eletrônica embarcada e funilaria</p>
+                    </div>
+                </div>
+                <div data-bs-interval="5500" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/carousel_desk/alt3.jpg" alt="Fale conosco">
+                    <div class="carousel-caption">
+                        <p class="subtitulo d-flex justify-content-center">Entre em contato e peça seu orçamento sem compromisso</p>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel_desk" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel_desk" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
     </div>
-
-    <!-- GRID E CARDS -->
-
-    <div class="container" id="grid">
-        <div class="row">
-            <div class="col-sm-12 col-lg-4 g-0">
-                <p>Coluna 1</p>
+    <!--Abas-->
+    <div class="container mt-2">
+        <ul class="nav nav-pills d-sm-flex justify-content-center" id="painel">
+            <li class="nav-item">
+                <a class="nav-link active" id="sobretab" data-bs-toggle="tab" href="#sobre">Sobre a oficina</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" id="servicostab" data-bs-toggle="tab" href="#servicos">Nossos serviços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contatotab" data-bs-toggle="tab" href="#contato">Agende sua avaliação</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="painelcontent">
+            <div class="tab-pane fade show active" id="sobre">
+                <!-- ABA 1 Inicio-->
+                <div class="container mt-2" id="grid">
+                    <div class="row d-md-flex">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h3 class="card-title titulo">
+                                        <i class="bi bi-cursor"></i>
+                                        Localização
+                                    </h3>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h3 class="card-title titulo">
+                                        <i class="bi bi-gear"></i>
+                                        Infraestrutura
+                                    </h3>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h3 class="card-title titulo">
+                                        <i class="bi bi-people"></i>
+                                        Equipe
+                                    </h3>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!--ABA 1 FIM -->
             </div>
-            <div class="col">
-                <p>Coluna 2</p>
+            <div class="tab-pane fade" id="servicos">
+                <!--ABA 2 Inicio-->
+                <div class="container mt-2" id="grid">
+                    <div class="row d-md-flex">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h3 class="card-title titulo">
+                                        <i class="bi bi-gear"></i>
+                                        Reformas
+                                    </h3>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h3 class="card-title titulo">
+                                        <i class="bi bi-gear"></i>
+                                        Transmissões
+                                    </h3>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card bg-dark my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title titulo">
+                                        <i class="bi bi-gear"></i>
+                                        Eletrônica embarcada
+                                    </h5>
+                                    <p class="card-text texto">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, consequuntur perferendis iste laboriosam officiis minima magni amet ipsa praesentium commodi, dolore incidunt nostrum id, doloribus aperiam enim dolores distinctio architecto!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ABA 2 Fim-->
             </div>
-            <div class="col">
-                <p>Coluna 3</p>
+            <div class="tab-pane fade" id="contato">
+                <!--Aba 3 Inicio-->
+                <div class="container my-2">
+                    <h4 class="section-title titulo">Vamos lá, não deixe seu carro esperando entre em contato conosco através do:</h4>
+                    <div class="row my-3">
+                        <div class="col-sm-12 col-md-6 subtitulo d-flex justify-content-center">
+                            <h4>
+                                <i class="bi bi-whatsapp"></i>
+                                <i class="bi bi-telephone"></i>    
+                                (011)91234-5678
+                            </h4>
+                        </div>
+                        <div class="col-sm-12 col-md-6 subtitulo d-flex justify-content-center">
+                            <h4>
+                                <i class="bi bi-envelope-at"></i>
+                                garagem73@gmail.com
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="container my-3">
+                        <h4 class="section-title titulo">Ou se preferir entre em contato através do formulário abaixo:</h4>
+                    </div>
+
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label subtitulo">Seu nome:</label>
+                                        <div class="d-flex">
+                                            <input type="text" id="nome" name="nome" class="form-control" required>
+                                            <i class="bi bi-check-lg h3 mx-3" id="icon_ok_nome"></i>
+                                        </div>
+                                        <p id="nome_erro">Favor, verificar o campo e digitar novamente</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label subtitulo">E-mail:</label>
+                                        <div class="d-flex">
+                                            <input type="email" id="email" class="form-control" required placeholder="email@dominio.com">
+                                            <i class="bi bi-check-lg h3 mx-3" id="icon_ok_email"></i>
+                                        </div>
+                                        <p id="email_erro">Favor, verificar o campo e digitar novamente</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label subtitulo">Celular:</label>
+                                        <div class="d-flex">
+                                            <input type="tel" id="telefone" class="form-control" required placeholder="(00)91234-5678">
+                                            <i class="bi bi-check-lg h3 mx-3" id="icon_ok_telefone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label subtitulo">Sua mensagem:</label>
+                                        <textarea class="form-control" id="mensagem" required></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn w-25 subtitulo" id="button_sucess" data-bs-toggle="modal" data-bs-target="#modal_sucess">
+                                            <h3>
+                                                <i class="bi bi-envelope-arrow-up mr-3"></i>
+                                                Enviar
+                                            </h3>
+                                        </button>
+                                        <button class="btn w-25 subtitulo" id="button_error" data-bs-toggle="modal" data-bs-target="#modal_error">
+                                            <h3>
+                                                <i class="bi bi-envelope-arrow-up mr-3"></i>
+                                                Enviar
+                                            </h3>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal_sucess">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body sucess">
+                                    <h4>
+                                        Muito obrigado! entraremos em contato em breve
+                                    </h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" class="btn sucess" data-bs-dismiss="modal">
+                                            <h4>
+                                                Ok!
+                                            </h4>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal_error">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body error">
+                                    <h4>
+                                        Ops! tem algum campo errado no formulário
+                                    </h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" class="btn error" data-bs-dismiss="modal">
+                                            <h4>
+                                                Ok!
+                                            </h4>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
-
-
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
